@@ -1,0 +1,3 @@
+{
+    "connectionString": "mongodb+srv://linh:testPass@taskmanager.kknnv.mongodb.net/?retryWrites=true&w=majority&appName=TaskManager"
+}
