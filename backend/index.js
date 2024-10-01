@@ -27,7 +27,6 @@ app.get("/", (req, res) => {
     res.json({ data: "hello" });
 });
 
-// Backend Ready !!!
 
 // Create Account
 app.post("/create-account", async (req, res) => {
