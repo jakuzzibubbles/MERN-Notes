@@ -190,7 +190,7 @@ app.put("/edit-note/:noteId", authenticateToken, async (req, res) => {
         if (title) note.title = title;
         if (content) note.content = content;
         if (tags) note.tags = tags;
-        if (isPinned) note.isPinned;
+        if (isPinned) note.isPinned = isPinned;
 
         await note.save();
 
