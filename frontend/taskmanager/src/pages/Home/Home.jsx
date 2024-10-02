@@ -52,6 +52,8 @@ const Home = () => {
     });
   };
 
+// Frontend Ready !!!
+
   // Get User Info
   const getUserInfo = async () => {
    try {
