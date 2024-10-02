@@ -11,7 +11,7 @@ const Toast = ({ isShown, message, type, onClose }) => {
 
   return () => {
     clearTimeout(timeoutId);
-  }
+  };
 }, [onClose]);
 
 
@@ -28,9 +28,9 @@ const Toast = ({ isShown, message, type, onClose }) => {
                 type === "delete" ? "bg-red-50" : "bg-green-50"
               }`}
               >
-                {type === 'delete' ? (
+                {type === "delete" ? (
                   <MdDeleteOutline className="text-xl text-red-500" />
-                  ) : (
+                ) : (
                    <LuCheck className="text-xl text-green-500" />
                 )}
               </div>
