@@ -16,7 +16,7 @@ const Home = () => {
     data: null,
   });
 
-  const [showToastMsg] = useState({
+  const [showToastMsg, setShowToastMsg] = useState({
     isShown: false,
     message: "",
     type: "add",
