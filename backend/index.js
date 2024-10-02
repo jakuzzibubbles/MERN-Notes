@@ -86,7 +86,7 @@ app.post("/login", async (req, res) => {
     }
 
     if (!password) {
-        return res.status(400).json({ message: "Passowrd is required" });
+        return res.status(400).json({ message: "Password is required" });
     }
 
     const userInfo = await User.findOne({ email: email });

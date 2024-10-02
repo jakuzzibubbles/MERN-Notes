@@ -4,11 +4,9 @@ import  Navbar  from "../../components/Navbar/Navbar";
 import { Link, useNavigate } from 'react-router-dom';
 import { validateEmail } from "../../utils/helper";
 import axiosInstance from "../../utils/axiosInstance";
-import axios from "axios";
 
 
 export const Login = () => {
-
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import NoteCard from '../../components/Cards/NoteCard';
 import { MdAdd } from 'react-icons/md';
@@ -6,6 +6,7 @@ import AddEditNotes from './AddEditNotes';
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../../utils/axiosInstance';
+import Toast from '../../components/ToastMessage/Toast';
 
 const Home = () => {
 
@@ -15,14 +16,40 @@ const Home = () => {
     data: null,
   });
 
+  const [showToastMsg] = useState({
+    isShown: false,
+    message: "",
+    type: "add",
+  });
+
+  const [allNotes, setAllNotes] = useState([]);
   const [userInfo, setUserInfo] = useState(null);
 
   const navigate = useNavigate();
 
+  const handleEdit = (noteDetails) => {
+    setOpenAddEditModal({ isShown: true, data: noteDetails, type: "edit" });
+  };
+
+  const showToastMessage = (message, type) => {
+    setShowToastMsg({
+      isShown: true,
+      message,
+      type
+    });
+  };
+
+  const handleCloseToast = () => {
+    setShowToastMsg({
+      isShown: false,
+      message: "",
+    });
+  };
+
   // Get User Info
   const getUserInfo = async () => {
    try {
-    const response = await axiosInstance.get("/get -user");
+    const response = await axiosInstance.get("/get-user");
     if (response.data && response.data.user) {
       setUserInfo(response.data.user);
     }
@@ -31,13 +58,27 @@ const Home = () => {
       localStorage.clear();
       navigate("/login");
     }
+   }
+  };
+
+// Get All Notes
+const getAllNotes = async () => {
+  try {
+    const response = await axiosInstance.get("/get-all-notes");
+
+    if (response.data && response.data.notes) {
+      setAllNotes(response.data.notes);
+     }
+    } catch (error) {
+      console.log("An unexpected error occurred. Please try again.");
   }
 };
 
 useEffect(() => {
+  getAllNotes();
   getUserInfo();
   return () => {};
-}, []);
+ }, []);
 
 
   return (
@@ -45,21 +86,23 @@ useEffect(() => {
 
       <Navbar userInfo={userInfo} />
 
-
-    <div className="container mx-auto">
-       <div className="grid grid-cols-3 gap-4 mt-8">
-          <NoteCard
-          title="Meeting tomorrow noon"
-          date="30th September"
-          content="Meeting tomorrow noon, 30th September"
-          tags="#Meeting"
-          isPinned={true}
-          onEdit={()=>{}}
-          onDelete={()=>{}}
-          onPinNote={()=>{}}
-          />
-       </div>
-     </div>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-3 gap-4 mt-8">
+            {allNotes.map((item, index) => (
+              <NoteCard
+              key={item._id}
+              title={item.title}
+              date={item.createdOn}
+              content={item.content}
+              tags={item.tags}
+              isPinned={item.isPinned}
+              onEdit={() => handleEdit(item)}
+              onDelete={() => {}}
+              onPinNote={() => {}}
+              />
+            ))}
+          </div>
+        </div>
 
      <button className="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-blue-600 absolute right-10 bottom-10" onClick={() => {setOpenAddEditModal({ isShown: true, type: "add", data: null});
      }}
@@ -85,8 +128,17 @@ useEffect(() => {
      onClose={() => {
       setOpenAddEditModal({ isShown: false, type: "add", data: null});
         }}
+        getAllNotes={getAllNotes}
+        showToastMessage={showToastMessage}
       />
      </Modal>
+
+     <Toast
+      isShown={showToastMsg.isShown}
+      message={showToastMsg.message}
+      type={showToastMsg.type}
+      onClose={handleCloseToast}
+      />
     </>
   );
 };
