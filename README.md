@@ -1,1 +1,0 @@
-# full-stack-MERN-TaskManager
