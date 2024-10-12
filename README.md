@@ -6,6 +6,7 @@
 
 # Dashboard User
 ![Dashboard UI](./frontend/taskmanager/public/dashboard.png)
+![Network](./frontend/taskmanager/public/network.png)
 
 # Start first note
 ![Dashboard UI](./frontend/taskmanager/public/dashboard-start.png)
