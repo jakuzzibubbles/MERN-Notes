@@ -95,6 +95,12 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
 
    ```
 
+5. **To start the Backend**:
+
+   ```bash
+   npm start
+   ```
+
 ### 3. Frontend Setup
 
 1. **Navigate to the Frontend Folder**:
@@ -121,6 +127,13 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
    - **react-icons**: For including icons in your UI.
 
 ---
+
+4. **To start the Frontend**:
+
+   ```bash
+   npm run dev
+   ```
+
 
 ## Key Dependencies
 
