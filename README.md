@@ -8,8 +8,9 @@
 # Dashboard User
 ![Dashboard UI](./frontend/taskmanager/public/dashboard.png)
 
-# Add Note
+# AddEditNote
 ![Add Note](./frontend/taskmanager/public/add-task-tag.png)
+![Edit Note](./frontend/taskmanager/public/edit-note.png)
 
 # ToastMessage
 ![Toast](./frontend/taskmanager/public/toast-message.png)
