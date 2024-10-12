@@ -1,22 +1,21 @@
 # LogIn UI
-![LogIn UI](./frontend/taskmanager/public/notes-login.svg)
-![FaRegEye](./frontend/taskmanager/public/FaRegEye-login.svg)
+![LogIn UI](./frontend/taskmanager/public/notes-login.png)
+![FaRegEye](./frontend/taskmanager/public/FaRegEye-login.png)
 
 # Start first note
-![Dashboard UI](./frontend/taskmanager/public/dashboard-start.svg)
+![Dashboard UI](./frontend/taskmanager/public/dashboard-start.png)
 
 # Dashboard User
-![Dashboard UI](./frontend/taskmanager/public/dashboard.svg)
+![Dashboard UI](./frontend/taskmanager/public/dashboard.png)
 
 # Add Note
-![Add Note](./frontend/taskmanager/public/add-task-tag.svg)
+![Add Note](./frontend/taskmanager/public/add-task-tag.png)
 
 # ToastMessage
-![Toast](./frontend/taskmanager/public/toast-message.svg)
-![Delete](./frontend/taskmanager/public/delete-note.svg)
-![Pin](./frontend/taskmanager/public/pin-note.svg)
+![Toast](./frontend/taskmanager/public/toast-message.png)
+![Delete](./frontend/taskmanager/public/delete-note.png)
+![Pin](./frontend/taskmanager/public/pin-note.png)
 
 # Search
-![Search](./frontend/taskmanager/public/search-notes.svg)
-![noMatch](./frontend/taskmanager/public/no-data-found.svg)
-
+![Search](./frontend/taskmanager/public/search-notes.png)
+![noMatch](./frontend/taskmanager/public/no-data-found.png)
