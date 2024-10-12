@@ -4,11 +4,11 @@
 ![Create Account](./frontend/taskmanager/public/user-exist.png)
 ![FaRegEye](./frontend/taskmanager/public/FaRegeye-login.png)
 
-# Start first note
-![Dashboard UI](./frontend/taskmanager/public/dashboard-start.png)
-
 # Dashboard User
 ![Dashboard UI](./frontend/taskmanager/public/dashboard.png)
+
+# Start first note
+![Dashboard UI](./frontend/taskmanager/public/dashboard-start.png)
 
 # AddEditNote & ToastMessage
 ![Add Note](./frontend/taskmanager/public/add-task-tag.png)
