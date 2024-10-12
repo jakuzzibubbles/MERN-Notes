@@ -82,6 +82,7 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
    - **jsonwebtoken**: For creating JWT tokens.
    - **dotenv**: For environment variable management.
    - **cors**: Middleware for enabling CORS.
+   - moment: For parsing, validating, manipulating, and formatting dates.
 
 4. **Set Up the API in `index.js`**:
 
@@ -132,6 +133,7 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
 - **jsonwebtoken**: `npm install jsonwebtoken`
 - **dotenv**: `npm install dotenv`
 - **cors**: `npm install cors`
+- **moment** `npm i monent`
 
 ### Frontend
 
