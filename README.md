@@ -34,6 +34,7 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
   - [2. Backend Setup](#2-backend-setup)
   - [3. Frontend Setup](#3-frontend-setup)
   - [4. API Integration](#4-api-integration)
+  - [Key Dependencies](#key-dependencies)
 
 ## Project Setup
 
