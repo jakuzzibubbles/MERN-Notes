@@ -1,6 +1,6 @@
 # LogIn UI
 ![LogIn UI](./frontend/taskmanager/public/notes-login.png)
-![FaRegEye](./frontend/taskmanager/public/FaRegEye-login.png)
+![FaRegEye](./frontend/taskmanager/public/FaRegeye-login.png)
 
 # Start first note
 ![Dashboard UI](./frontend/taskmanager/public/dashboard-start.png)
