@@ -8,14 +8,12 @@
 # Dashboard User
 ![Dashboard UI](./frontend/taskmanager/public/dashboard.png)
 
-# AddEditNote
+# AddEditNote & ToastMessage
 ![Add Note](./frontend/taskmanager/public/add-task-tag.png)
-![Edit Note](./frontend/taskmanager/public/edit-note.png)
-
-# ToastMessage
 ![Toast](./frontend/taskmanager/public/toast-message.png)
-![Delete](./frontend/taskmanager/public/delete-note.png)
+![Edit Note](./frontend/taskmanager/public/edit-note.png)
 ![Pin](./frontend/taskmanager/public/pin-note.png)
+![Delete](./frontend/taskmanager/public/delete-note.png)
 
 # Search
 ![Search](./frontend/taskmanager/public/search-notes.png)
