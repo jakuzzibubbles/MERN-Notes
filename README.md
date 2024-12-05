@@ -34,8 +34,7 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
   - [2. Backend Setup](#2-backend-setup)
   - [3. Frontend Setup](#3-frontend-setup)
   - [4. API Integration](#4-api-integration)
-- [Key Dependencies](#key-dependencies)
-- [Testing the Application](#testing-the-application)
+  - [Key Dependencies](#key-dependencies)
 
 ## Project Setup
 
@@ -82,6 +81,7 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
    - **jsonwebtoken**: For creating JWT tokens.
    - **dotenv**: For environment variable management.
    - **cors**: Middleware for enabling CORS.
+   - moment: For parsing, validating, manipulating, and formatting dates.
 
 4. **Set Up the API in `index.js`**:
 
@@ -93,6 +93,12 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
    const cors = require('cors');
    require('dotenv').config();
 
+   ```
+
+5. **To start the Backend**:
+
+   ```bash
+   npm start
    ```
 
 ### 3. Frontend Setup
@@ -122,6 +128,13 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
 
 ---
 
+4. **To start the Frontend**:
+
+   ```bash
+   npm run dev
+   ```
+
+
 ## Key Dependencies
 
 ### Backend
@@ -132,6 +145,7 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
 - **jsonwebtoken**: `npm install jsonwebtoken`
 - **dotenv**: `npm install dotenv`
 - **cors**: `npm install cors`
+- **moment** `npm i monent`
 
 ### Frontend
 
