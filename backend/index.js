@@ -1,12 +1,6 @@
 require("dotenv").config();
 
-const config = require("./config.json");
 const mongoose = require("mongoose");
-
-mongoose.connect(config.connectionString);
-
-const User = require("./models/user.model");
-const Note = require("./models/note.model");
 
 const express = require("express");
 const cors = require("cors");
@@ -14,6 +8,17 @@ const app = express();
 
 const jwt = require("jsonwebtoken");
 const { authenticateToken } = require("./utilities");
+
+const User = require("./models/user.model");
+const Note = require("./models/note.model");
+
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("Connected to MongoDb"))
+  .catch((error) => {
+    console.error("Failed to connect to MongoDb:", error);
+    process.exit(1);
+  });
 
 app.use(express.json());
 
@@ -316,7 +321,8 @@ app.get("/search-notes/", authenticateToken,async (req, res) => {
     }
 });
 
+const port = process.env.PORT;
 
-app.listen(3000);
+app.listen(port);
 
 module.exports = app;
