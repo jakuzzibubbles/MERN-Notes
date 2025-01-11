@@ -128,30 +128,10 @@ This project is a simple notes application built using the MERN stack (MongoDB, 
 
 ---
 
-4. **To start the Frontend**:
+4. **To start the development server**:
 
    ```bash
    npm run dev
    ```
 
-
-## Key Dependencies
-
-### Backend
-
-- **express**: `npm install express`
-- **mongoose**: `npm install mongoose`
-- **bcryptjs**: `npm install bcryptjs`
-- **jsonwebtoken**: `npm install jsonwebtoken`
-- **dotenv**: `npm install dotenv`
-- **cors**: `npm install cors`
-- **moment** `npm i monent`
-
-### Frontend
-
-- **axios**: `npm install axios`
-- **react-router-dom**: `npm install react-router-dom`
-- **react-icons**: `npm install react-icons`
-
----
 
